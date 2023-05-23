@@ -1,0 +1,27 @@
+@mixin breakpoint($point) {
+	@if $point ==lg {
+		@media (max-width: 768px) {
+			@content;
+		}
+	}
+
+	@if $point ==md {
+		@media (max-width: 576px) {
+			@content;
+		}
+	}
+
+	@if $point ==sm {
+		@media (max-width: 399px) {
+			@content;
+		}
+	}
+}
+
+@mixin min-device-pixel($factor, $dpi, $dppx) {
+	@media screen and (min-device-pixel-ratio: $factor),
+		screen and (min-resolution: $dpi),
+		screen and (min-resolution: $dppx) {
+		@content;
+	}
+}
