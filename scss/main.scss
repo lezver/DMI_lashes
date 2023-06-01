@@ -11,6 +11,7 @@ $ani: 5s linear infinite;
 }
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
+html,
 body {
 	height: 100%;
 	font-family: "Comfortaa", cursive;
@@ -20,14 +21,14 @@ body {
 		font-size: 16px;
 	}
 	background: linear-gradient(
-			rgba(255, 255, 255, 0.47),
-			rgba(255, 255, 255, 0.47)
+			rgba(141, 141, 141, 0.45),
+			rgba(141, 141, 141, 0.45)
 		),
 		url(../images/bg/bg.desk.jpg) no-repeat fixed center bottom / cover;
 	@include min-device-pixel(2, 192dpi, 2dppx) {
 		background: linear-gradient(
-				rgba(255, 255, 255, 0.47),
-				rgba(255, 255, 255, 0.47)
+				rgba(141, 141, 141, 0.45),
+				rgba(141, 141, 141, 0.45)
 			),
 			url(../images/bg/bg.desk@2x.jpg) no-repeat fixed center bottom / cover;
 	}
@@ -43,14 +44,14 @@ body {
 			height: 100vh;
 			z-index: -1;
 			background: linear-gradient(
-					rgba(255, 255, 255, 0.37),
-					rgba(255, 255, 255, 0.37)
+					rgba(141, 141, 141, 0.45),
+					rgba(141, 141, 141, 0.45)
 				),
 				url(../images/bg/bg.phone.jpg) no-repeat center/ cover;
 			@include min-device-pixel(2, 192dpi, 2dppx) {
 				background: linear-gradient(
-						rgba(255, 255, 255, 0.37),
-						rgba(255, 255, 255, 0.37)
+						rgba(141, 141, 141, 0.45),
+						rgba(141, 141, 141, 0.45)
 					),
 					url(../images/bg/bg.phone@2x.jpg) no-repeat center / cover;
 			}
